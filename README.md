@@ -7,6 +7,15 @@ The goal of this project is to create a simple application through Docker Compos
 Before starting with this project make sure to have installed the following tools on your laptop:
 - Docker
 
+Then, from the terminal run the following command:
+```
+docker-compose up
+```
+
+Starting from `docker-compose`, that command performs the operations below:
+1. build the images
+2. create containers
+3. start the application
 
 ## Docker Compose
 
@@ -14,6 +23,12 @@ Before starting with this project make sure to have installed the following tool
 
 ### Docker Compose use cases
 
+
+### Environment Variables vs Build Arguments
+The main difference between these two features is the following:
+```Environment Variables are accessible from running Docker container. On the other hand, Build Arguments are usable only at build time```
+
+If the list of environment variables to define is too long, create an environment file of variable to read.
 
 
 
